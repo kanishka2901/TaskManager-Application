@@ -1,0 +1,88 @@
+.todo{
+    display:flex;
+    max-width: 500px;
+    margin:auto;
+    margin-bottom: 15px;
+    padding: 25px;
+}
+.add{
+    display:flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin:auto;
+}
+
+.todo:nth-child(even){
+    background-color:#e9abb1;
+    color: black;
+}
+
+.todo:last-of-type{
+    border-bottom: 0;
+}
+.todo{
+    position: relative;
+    color: #f3f3f3;
+    background: #cb808b;
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px 0px rgb(black, 0.1);
+}
+.todo:hover{
+    cursor: pointer;
+        box-shadow: 0px 0px 0px 4px rgba(black, 0.05);       
+}
+
+.todo .id{
+    flex: 1 1 50px;
+}
+
+.todo .content{
+    flex: 1 1 100%;
+}
+
+.todo.done .content{
+    text-decoration: line-through;
+}
+
+.todo-input{
+    display: block;
+    width:100%;
+    padding: 10px 15px;
+    appearance: none;
+    border: none;
+    background-color: #f3f3f3;
+    margin-top: 15px;
+    font-size: 20px;
+    outline: none;
+}
+
+.todo-submit{
+    display: block;
+    width:100%;
+    max-width: 200px;
+    padding: 10px 15px;
+    appearance: none;
+    border: none;
+    background: none;
+    background-color: #1a364e;
+    color: #fff;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    outline: none;
+}
+
+.x-button{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    height: 34px;
+    width: 34px;
+    background-image: url('src\assets\delete_icon.svg');
+    border-radius: 4px;
+}
+.x-button:hover:active{
+    background-color: #a35c6e;
+}
